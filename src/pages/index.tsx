@@ -4,6 +4,7 @@ import Seo from '@/components/Seo';
 import Navbar from '@/components/Nav';
 import Announcement from '@/components/Announcement';
 import Slider from '@/components/Slider';
+import Footer from '@/components/Footer';
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
         <Navbar />
         <Announcement/>
         <Slider/>
+        <Footer/>
       </main>
     </Layout>
   );
