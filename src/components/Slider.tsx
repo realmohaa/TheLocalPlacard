@@ -41,8 +41,8 @@ const Slider = () => {
   ];
 
   return (
-    <div className="w-full h-70vh relative overflow-hidden">
-      <div className="h-full flex flex-col md:flex-row transition-all duration-1000">
+    <div className="container m-auto overflow-hidden h-70vh relative">
+      <div className="h-full flex flex-col md:flex-row ">
         {items.map((item) => (
           <div className='w-full flex flex-col items-start' key={item.id}>
             <div className="flex-1 h-full">

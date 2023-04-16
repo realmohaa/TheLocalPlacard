@@ -5,6 +5,7 @@ import Navbar from '@/components/Nav';
 import Announcement from '@/components/Announcement';
 import Slider from '@/components/Slider';
 import Footer from '@/components/Footer';
+import Featured from '@/components/Featured';
 
 export default function HomePage() {
   return (
@@ -12,10 +13,11 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
-      <main>
+      <main className='overflow-x-hidden'>
         <Navbar />
         <Announcement/>
         <Slider/>
+        <Featured/>
         <Footer/>
       </main>
     </Layout>

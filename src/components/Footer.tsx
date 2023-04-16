@@ -18,7 +18,7 @@ const FooterLinks = [
       <div className="ml-2 space-y-2">
         <div className="flex flex-col">
           <Button
-            variant=""
+            variant="text"
             startIcon={<HiMail />}
             className="w-fit rounded-full text-left lowercase text-black transition duration-150 hover:scale-110"
           >

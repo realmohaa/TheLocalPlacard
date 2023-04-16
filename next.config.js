@@ -9,7 +9,7 @@ const nextConfig = {
 
   // Uncoment to add domain whitelist
   images: {
-    domains: ['encrypted-tbn0.gstatic.com'],
+    domains: ['encrypted-tbn0.gstatic.com', 'cdn.shopify.com'],
   },
 
   // SVGR
