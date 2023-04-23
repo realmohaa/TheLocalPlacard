@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HiSearch, HiShoppingCart, HiMenuAlt1, HiUser, HiGlobe } from "react-icons/hi";
 import { Button, IconButton } from '@mui/material'
+import Hamburger from 'hamburger-react'
 
 const Navbar = () => {
+  const [isOpen, setOpen] = useState(false)
   return (
     // Navigation container
     <div className="px-8 pt-6 pb-3">
       {/* Navigation wrapper */}
-      <div className="px-10 sm:px-0 sm:mx-4 flex justify-between items-center h-full">
+      <div className="lg:px-10 sm:px-0 sm:mx-4 flex justify-between items-center h-full">
         {/* Left section */}
         <div className="flex items-center flex-1">
           {/* Language selection */}
@@ -24,13 +26,13 @@ const Navbar = () => {
 
         {/* Center section */}
         <div className="flex-1 text-center">
-            <h1 className="font-bold uppercase text-lg sm:text-2xl transition-all duration-100 ease-in-out hover:scale-112">
+            <h1 className="font-bold uppercase block text-sm md:text-2xl min-w-full transition-all duration-100 ease-in-out hover:scale-112">
               The Local Placard
             </h1>
         </div>
 
         {/* Right section */}
-        <div className="flex items-center flex-1 justify-end">
+        <div className="flex items-center flex-1 justify-end ">
           {/* Register button */}
           <div className="hidden sm:block">
           <IconButton color="default"><HiUser/></IconButton>
@@ -48,10 +50,7 @@ const Navbar = () => {
 
           {/* Mobile menu button */}
           <div className="sm:hidden">
-            <HiMenuAlt1
-              className="h-6 w-6 text-gray-500 cursor-pointer"
-              // onClick={toggle}
-            />
+          <Hamburger size={22} toggled={isOpen} toggle={setOpen} />
           </div>
         </div>
       </div>

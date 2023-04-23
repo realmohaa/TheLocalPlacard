@@ -73,6 +73,7 @@ const Footer: React.FC = () => {
                   {link?.subLinks?.map((subLink, i) => {
                     return (
                       <Button
+                        variant='text'
                         key={i++}
                         className="w-fit rounded-full text-left capitalize text-black transition duration-150 hover:scale-110"
                       >
